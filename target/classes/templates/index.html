@@ -1,0 +1,73 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Let's Play A Random Game</title>
+<style>
+body {
+	background-color: #2C466C;
+}
+
+h1, h3 {
+	text-align: center;
+	color: gold;
+}
+
+p {
+	color: gold;
+}
+
+nav { 
+	border-radius: 10px;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+}
+
+nav a {
+	color: gold;
+	background-color: gray;
+	display: block;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 10px;
+	width: auto;
+	text-align: center;
+}
+
+nav a:hover {
+	background-color: black;
+	padding: 5px 25px;
+}
+
+</style>
+</head>
+<body>
+<h1>Random Number Game</h1>
+<h3>Think you have what it takes to beat our random number generator?</h3> 
+
+<p>Try your luck with one of our 3 games below! For those wanting to pass the time and 
+have a little fun select our <b>EASY</b> option. For our returning seasoned veterans, or those 
+wanting a bit of a challenge, <b>INTERMEDIATE</b> is the choice for you. Anyone looking for a 
+true battle of wits? Our <b>INSANE</b> option is not for the faint of heart, please play at your 
+own risk. It's made grown men cry...</p>
+
+<p>Pick a number between 1 and 10</p>
+<form>
+	<input type="text" name="userGuess"><br >
+	<input type="submit">
+</form>
+	
+	<nav>
+		<ul>
+			<li><a href="randomgame?select=easy">EASY</a></li>
+			<li><a href="randomgame?select=intermediate">INTERMEDIATE</a></li>
+			<li><a href="randomgame?select=insane">INSANE</a></li>
+		</ul>
+	</nav>
+	
+</body>
+</html>
